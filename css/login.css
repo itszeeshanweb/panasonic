@@ -1,0 +1,9 @@
+/* Krunal Wankhede CSS  */
+
+/**************** Global CSS  ****************/
+body{background-image: url(../img/bg-shape.png);background-repeat: no-repeat;background-size: contain;background-color: #F5DEDE;background-position: top right;}
+
+.form-container{background: #FFF;padding: 80px 50px;height: 494px; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15); position: relative;}
+.form-container::before{right: 15px;content: '';position: absolute;top: 15px;left: 15px;bottom: 15px;border: 0.7px dashed #D1D1D1;}
+.form-box{height: 100vh;}
+/* img{width: 100%;} */
