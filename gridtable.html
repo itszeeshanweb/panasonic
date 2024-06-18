@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Panasonic | CRM</title>
+    <link rel="icon" href="img/favicon.webp">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="css/fontawesome.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="display-panel">
+        <div class="right-panel">
+            <div class="header">
+                <div class="container align-space-between">
+                    <div class="brand">
+                        <a href="#">
+                            <img src="img/logo.png" alt="Panasonic">
+                        </a>
+                    </div>
+                    <div class="search-box">
+                        <a class="" href="#searchModal" data-bs-toggle="modal" data-bs-target="#searchModal" role="button"><i class="fas fa-search"></i> </a>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard-wrap list-box">
+                <div class="container">
+                    <div class="card mt-3">
+                        <h1 class="card-header">Grid</h1>
+                        <div class="card-body">
+                            <table class="table">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First</th>
+                                        <th scope="col">Last</th>
+                                        <th scope="col">Handle</th>
+                                      </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                      <th scope="row">1</th>
+                                      <td>Mark</td>
+                                      <td>Otto</td>
+                                      <td><a href="accordion.html">@mdo</a></td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">2</th>
+                                      <td>Jacob</td>
+                                      <td>Thornton</td>
+                                      <td><a href="accordion.html">@mdo</a></td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">3</th>
+                                      <td>Larry</td>
+                                      <td>the Bird</td>
+                                      <td><a href="accordion.html">@mdo</a></td>
+                                    </tr>
+                                  </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seach Modal -->
+    <div class="modal fade" id="searchModal" aria-hidden="true" aria-labelledby="searchModalLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="searchModalLabel">Search By</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="uniqueNo" class="form-label">Unique No</label>
+                            <input type="text" class="form-control" id="uniqueNo" placeholder="Unique No">
+                        </div>
+                        <div class="text-center">
+                            or
+                        </div>
+                        <div class="mb-3">
+                            <label for="mobileNo" class="form-label">Mobile</label>
+                            <input type="text" class="form-control" id="mobileNo" placeholder="Mobile">
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Name">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer text-center">
+                    <button class="btn btn-primary" data-bs-target="#importData2" data-bs-toggle="modal">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script>
+        $("#btnAddCategory").click(function(){
+            var clone = $(".addedCategoryList").clone();
+            clone.appendTo("#addCategoryContent");
+            clone.find(".form-control").val("");
+        });
+        $("#btnAddProduct").click(function(){
+            var clone = $(".addedPrdctList").clone();
+            clone.appendTo("#addPrdctContent");
+            clone.find(".form-control").val("");
+        });
+    </script>
+</body>
+
+</html>

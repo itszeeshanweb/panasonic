@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Panasonic | Request</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="font-icon/bootstrap-icons.css" rel="stylesheet">
+    <link href="font/stylesheet.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="display-panel">
+        <div class="right-panel">
+            <div class="header">
+                <div class="container align-space-between">
+                    <div class="brand">
+                        <a href="#">
+                            <img src="img/logo.png" alt="Panasonic"> 
+                        </a>
+                    </div>
+                    <div class="search-box">
+                        <a class="" href="#searchModal" data-bs-toggle="modal" data-bs-target="#searchModal" role="button"><i class="bi bi-search"></i> </a>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="request.html">Request</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="search.html">Search</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="upload-modules.html">Upload Modules</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-6 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div id="UpdatePanel1" class="border-around-div">
+                                    <h1 class="font-weight text-center mt-3">Bulk Upload Template</h1>
+                                    <div class="mt-5">
+                                        <input id="demo1" class="demo1" type="file" multiple placeholder="Bulk Upload" name="demo1[]" />
+                                    </div>
+                                    <div class="text-center">
+                                        <p class="mt-5">Please upload excel file in csv format, download below sample file for
+                                            reference.</p>
+                                        <a href="img/demo.xls" class="btn btn-outline-danger btn-outline-me mb-4">
+                                            <i class="bi bi-download"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Panasonic | CRM</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="font-icon/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="font/stylesheet.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="display-panel">
+        <div class="right-panel">
+            <div class="header">
+                <div class="container align-space-between">
+                    <div class="brand">
+                        <a href="#">
+                            <img src="img/logo.png" alt="Panasonic">
+                        </a>
+                    </div>
+                    <div class="search-box">
+                        <a class="" href="#searchModal" data-bs-toggle="modal" data-bs-target="#searchModal"
+                            role="button"><i class="bi bi-search"></i> </a>
+                    </div>
+                </div>
+            </div>
+            <div class="banner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1><i>Warranty Registration</i></h1>
+                            <img class="banner-img" src="img/banner.jpg" width="100%" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard-wrap list-box">
+                <div class="container">
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <div id="UpdatePanel1" class="border-around-div">
+                                <div class="row">
+                                    <div class="col-12 mb-3">
+                                        <h1 class="font-weight">Customer Information</h1>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-element form-input">
+                                            <input id="name" class="form-element-field" placeholder="Name" type="input"
+                                                required />
+                                            <div class="form-element-bar"></div>
+                                            <label class="form-element-label" for="name">Name</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <div class="form-element form-input">
+                                            <input id="address" class="form-element-field" placeholder="Address"
+                                                type="input" required />
+                                            <div class="form-element-bar"></div>
+                                            <label class="form-element-label" for="address">Address</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <div class="form-element form-input">
+                                            <input id="address" class="form-element-field" placeholder="Email Address"
+                                                type="input" required />
+                                            <div class="form-element-bar"></div>
+                                            <label class="form-element-label" for="address">Email Address</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-element form-input">
+                                            <input id="address" class="form-element-field" placeholder="Phone Number"
+                                                type="input" required />
+                                            <div class="form-element-bar"></div>
+                                            <label class="form-element-label" for="address">Phone Number</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-element form-input">
+                                            <input id="address" class="form-element-field" placeholder="State"
+                                                type="input" required />
+                                            <div class="form-element-bar"></div>
+                                            <label class="form-element-label" for="address">State</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-element form-input">
+                                            <input id="address" class="form-element-field" placeholder="Pincode"
+                                                type="input" required />
+                                            <div class="form-element-bar"></div>
+                                            <label class="form-element-label" for="address">Pincode</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 ">
+                                        <div class="form-element form-input">
+                                            <input id="address" class="form-element-field" placeholder="Purchase Date"
+                                                type="input" required />
+                                            <div class="form-element-bar"></div>
+                                            <label class="form-element-label" for="address">Purchase Date</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 d-flex align-items-center justify-content-center">
+                                        <!-- <div id="fileUploadContainer">
+                                            <label for="file-upload" class="custom-file-upload">Upload Invoice &nbsp;&nbsp;<i class="bi bi-cloud-upload"></i></label>
+                                            <input id="file-upload" type="file" style="display: none" />
+                                        </div>
+                                        <div id="fileText" class="custom-file-text hide"></div> -->
+                                        <input id="demo1" class="demo1" type="file" multiple
+                                            placeholder="Upload Invoice   " name="demo1[]" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 ">
+                            <h1 class="font-weight mt-4">Customer Information</h1>
+                            <h3 class="red">Add Category</h3>
+                        </div>
+                    </div>
+
+                    <div id="AardArea">
+                        <div class="card mt-4 addCategory">
+                            <div class="card-body">
+                                <div id="UpdatePanel1" class="border-around-div">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="d-flex ">
+
+                                                <select class="productscategory">
+                                                    <option value="">Product Category</option>
+                                                    <option value="">Solar Modules</option>
+                                                    <option value="">Inverter</option>
+                                                    <option value="">Solar Streetlight</option>
+                                                </select>
+
+                                                <button class="btn plus-btn addCategoryBtn"><i
+                                                        class="bi bi-plus-circle-dotted"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="addCategoryContainer" class="hide">
+                                        <div class="row rows-cols first_element" id="add-category">
+                                            <div class="col">
+                                                <div class="form-element form-select">
+                                                    <select id="productcode" class="form-element-field">
+                                                        <option disabled selected value=""
+                                                            class="form-select-placeholder"></option>
+                                                        <option value="V4440H0A1">V4440H0A1</option>
+                                                        <option value="V4440H0A2">V4440H0A2</option>
+                                                        <option value="V4440H0A3">V4440H0A3</option>
+                                                        <option value="V4440H0A4">V4440H0A4</option>
+                                                    </select>
+                                                    <div class="form-element-bar"></div>
+                                                    <label class="form-element-label" for="productcode">Product
+                                                        code</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col">
+                                                <div class="form-element form-input">
+                                                    <input id="Description" class="form-element-field"
+                                                        placeholder="Description" type="input" required />
+                                                    <div class="form-element-bar"></div>
+                                                    <label class="form-element-label"
+                                                        for="Description">Description</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col">
+                                                <div class="form-element form-input">
+                                                    <input id="Warranty" class="form-element-field"
+                                                        placeholder="Warranty" type="input" required />
+                                                    <div class="form-element-bar"></div>
+                                                    <label class="form-element-label" for="Warranty">Warranty</label>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-element form-input">
+                                                    <input id="QuantityPurchase" class="form-element-field"
+                                                        placeholder="Quantity Purchase" type="number" required />
+                                                    <div class="form-element-bar"></div>
+                                                    <label class="form-element-label" for="QuantityPurchase">Quantity
+                                                        Purchase</label>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-element form-input">
+                                                    <input id="SerialNumber" class="form-element-field"
+                                                        placeholder="Serial Number" type="input" required />
+                                                    <div class="form-element-bar"></div>
+                                                    <label class="form-element-label" for="SerialNumber">Serial
+                                                        Number</label>
+                                                    <div class="d-flex bulk-icon">
+                                                        <div class="dropdown">
+                                                            <button class="dropbtn">
+                                                                <i class="bi bi-info-circle"></i>
+                                                            </button>
+                                                            <div class="dropdown-content">
+                                                                <p>Serial Number Must Be
+                                                                    Coma Separated</p>
+                                                            </div>
+                                                        </div>
+                                                        <div><a href="" data-bs-toggle="modal"
+                                                                data-bs-target="#staticBackdrop"><img
+                                                                    src="img/bulk-upload.png"></a></div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col m-auro col-auto d-flex align-items-center">
+                                                <button id="plus-btn-add" class="btn plus-btn add-product "><i
+                                                        class="bi bi-plus-circle-dotted"></i></button>
+                                                <button id="closeRow" class=" hide closet-btn-set"><i
+                                                        class="bi bi-x-circle-fill"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 mt-4 text-center">
+                            <button class="btn btn-danger submit-btn">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bulk Upload Upload Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-none">
+                <div class="modal-body text-center">
+                    <button type="button" class="btn-close new-close-btn" data-bs-dismiss="modal" aria-label="Close"> <i
+                            class="bi bi-x-lg"></i></button>
+                    <div id="UpdatePanel1" class="border-around-div">
+                        <h3>Bulk Upload</h3>
+                        <div class="mt-4">
+                            <input id="demo1" class="demo1" type="file" multiple placeholder="Upload Invoice   "
+                                name="demo1[]" />
+                        </div>
+                        <p class="mt-4">Please upload excel file in csv format, download below sample file for
+                            reference.</p>
+                        <a href="img/demo.xls"><button class="btn btn-outline-danger btn-outline-me">
+                            <i class="bi bi-download"></i></button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Search By Modal -->
+    <div class="modal fade" id="searchModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="UpdatePanel1" class="border-around-div">
+                        <h5 class="modal-title" id="searchModalLabel">Search By</h5>
+                        <button type="button" class="btn-close new-close-btn" data-bs-dismiss="modal"
+                            aria-label="Close"><i class="bi bi-x-lg"></i></button>
+                        <form>
+                            <div class="form-element form-input">
+                                <input id="UniqueNo" class="form-element-field" placeholder="Unique No" type="input"
+                                    required />
+                                <div class="form-element-bar"></div>
+                                <label class="form-element-label" for="UniqueNo">Unique No</label>
+                            </div>
+
+
+                            <div class="text-center">
+                                <span class="badge bg-secondary">or</span>
+                            </div>
+
+                            <div class="form-element form-input">
+                                <input id="Mobile" class="form-element-field" placeholder="Mobile" type="input"
+                                    required />
+                                <div class="form-element-bar"></div>
+                                <label class="form-element-label" for="Mobile">Mobile</label>
+                            </div>
+
+                            <div class="form-element form-input mt-5">
+                                <input id="Name" class="form-element-field" placeholder="Name" type="input" required />
+                                <div class="form-element-bar"></div>
+                                <label class="form-element-label" for="Mobile">Name</label>
+                            </div>
+
+                        </form>
+
+                        <div class="col-12 mt-4 text-center">
+                            <button class="btn btn-danger submit-btn">Search</button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Approval Rejected Modal -->
+    <div class="modal fade" id="approvalRejectedModal" aria-hidden="true" aria-labelledby="approvalRejectedModalLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Status</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="statusBox" class="text-center">
+                        <button class="btn btn-primary">Approval</button>
+                        <button class="btn btn-secondary" id="rejectBtn">Rejected</button>
+                    </div>
+                    <div id="reasonContainer" style="display: none;">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Default radio
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Default checked radio
+                            </label>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-primary">Ok</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
